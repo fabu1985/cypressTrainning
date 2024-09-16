@@ -1,4 +1,4 @@
-Feature:  Wikipedia exaple tests
+Feature:  Wikipedia example tests
 
   Background:
     Given User is in Wikipedia Home Page

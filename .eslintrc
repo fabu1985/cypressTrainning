@@ -1,0 +1,32 @@
+{
+    "env": { "browser": true, "es2021": true, "cypress/globals": true },
+    "extends": ["plugin:react/recommended", "airbnb", "prettier", "plugin:cypress/recommended"],
+    "parserOptions": {
+      "ecmaFeatures": { "jsx": true },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["cypress"],
+    "rules": {
+      "react/no-children-prop": 0,
+      "import/no-cycle": 0,
+      "react/jsx-props-no-spreading": 0,
+      "prettier/prettier": ["error", { "printWidth": 180 }],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "jsx-a11y/label-has-associated-control": [2, { "assert": "htmlFor" }],
+      "import/prefer-default-export": 0,
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+      "react/no-array-index-key": 0
+    },
+    "ignorePatterns": ["reports", "coverage", "cucumber-json"],
+    "overrides": [
+      /**
+       * CYPRESS
+       */
+      {
+        "files": [".js"],
+        "rules": { "import/no-extraneous-dependencies": 0, "no-undef": "warn"}
+      }
+    ]
+  }
+  
