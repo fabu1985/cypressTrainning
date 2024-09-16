@@ -7,7 +7,9 @@
   "scripts": {
     "cypressTests": "npx cypress open --config-file cypress.local.config.js",
     "cypress:smoke": "npx cypress run --browser chrome --headless ",
-    "generate:report": "./node_modules/.bin/generate-mochawesome-report --saveJson --jsonDir results/mochawesome/json -o results/mochawesome/report"
+    "generate:report": "./node_modules/.bin/generate-mochawesome-report --saveJson --jsonDir results/mochawesome/json -o results/mochawesome/report",
+    "lint": "eslint cypress",
+    "lint:fix": "eslint cypress --fix"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
