@@ -1,4 +1,4 @@
-# Proyecto base de Cypress para realizar tests con Cucumber y page objects
+# Proyecto base de Cypress para realizar tests con Cucumber e implementar GitHub Actions
 
 Este proyecto base está creado con el objetivo de proporcionar una plantilla para realizar pruebas E2E con cypress. Tiene toda la estructura necesaria para empezar a desarrollar tests sin perder tiempo en configuraciones.
 
