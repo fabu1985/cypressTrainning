@@ -1,4 +1,5 @@
 results
+mochawesome-report
 package-lock.json
 *node_modules*
 
@@ -14,4 +15,5 @@ cypress.local.config.js
 
 *cypress-image-diff-screenshots*
 *cypress-image-diff-html-report*
+
 **/downloads/

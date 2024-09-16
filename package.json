@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "open:local": "npx cypress open --config-file cypress.local.config.js",
-    "open:des": "npx cypress open --config-file cypress.des.config.js",
+    "cypressTests": "npx cypress open --config-file cypress.local.config.js",
+    "cypress:smoke": "npx cypress run --browser chrome --headless ",
     "generate:report": "./node_modules/.bin/generate-mochawesome-report --saveJson --jsonDir results/mochawesome/json -o results/mochawesome/report"
   },
   "dependencies": {
